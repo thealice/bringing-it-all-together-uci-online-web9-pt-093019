@@ -8,6 +8,7 @@ class Dog
   end
   
   def attributes
-
+    
   end
+
 end
