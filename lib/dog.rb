@@ -7,8 +7,8 @@ class Dog
     end
   end
 
-  def attributes
-
-  end
+  # def attributes
+  # 
+  # end
 
 end
