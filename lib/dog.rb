@@ -4,7 +4,7 @@ class Dog
   def initialize(attributes)
     binding.pry
     attributes.each do |k, v|
-      self.send("k=", v)
+      self.send("{k=}", v)
     end
   end
 
