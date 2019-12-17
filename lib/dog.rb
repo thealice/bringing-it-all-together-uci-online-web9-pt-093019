@@ -9,7 +9,7 @@ class Dog
 
   def self.create_table
     sql = <<-SQL
-      CREATE TABLE IF NOT EXIST dogs VALUES(
+      CREATE TABLE IF NOT EXISTS dogs VALUES(
         id INTEGER PRIMARY KEY,
         name TEXT,
         breed TEXT
