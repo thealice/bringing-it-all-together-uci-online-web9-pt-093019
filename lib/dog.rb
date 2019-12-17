@@ -7,9 +7,9 @@ class Dog
       self.send("k=", v)
     end
   end
-  
+
   def attributes
-    
+
   end
 
 end
