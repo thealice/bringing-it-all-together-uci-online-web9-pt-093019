@@ -52,6 +52,7 @@ class Dog
     if !dog.empty?
       dog_data = dog[0]
       dog = Dog.new_from_db(dog_data)
+    end
   end
 
   def save
