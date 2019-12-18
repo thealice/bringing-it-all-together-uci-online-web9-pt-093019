@@ -47,6 +47,7 @@ class Dog
   end
 
   def self.find_or_create_by(args)
+    binding.pry
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     dog = DB[:conn].execute(sql, name, breed)
     if !dog.empty?
