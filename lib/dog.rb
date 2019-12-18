@@ -28,8 +28,8 @@ class Dog
     dog.save
   end
 
-  def self.new_from_db
-    
+  def self.new_from_db(attribute_array)
+    binding.pry
   end
 
   def save
