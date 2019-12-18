@@ -34,9 +34,9 @@ class Dog
     breed = row[2]
     # attributes = {}
     attributes {
-      :id => id,
-      :name => name,
-      :breed => breed
+      id: id,
+      name: name,
+      breed: => breed
     }
     dog = self.new(attributes)
   end
