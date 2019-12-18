@@ -50,6 +50,8 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     dog = DB[:conn].execute(sql, name, breed)
     if !dog.empty?
+      dog_data = dog[0]
+      dog = Dog.new_from_db(dog_data)
   end
 
   def save
