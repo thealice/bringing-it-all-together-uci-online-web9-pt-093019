@@ -5,6 +5,7 @@ class Dog
     attributes.each do |k, v|
       self.send("#{k}=", v)
     end
+    @id = nil
   end
 
   def self.create_table
