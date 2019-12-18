@@ -5,7 +5,6 @@ class Dog
     attributes.each do |k, v|
       self.send("#{k}=", v)
     end
-    @id = nil unless self.id
   end
 
   def self.create_table
@@ -30,7 +29,7 @@ class Dog
     else
         sql = <<-SQL
           INSERT INTO dogs
-          VALUES (?, ?, ?)
+          VALUES (NULL, ?, ?)
         SQL
         DB[:conn].execute(sql, self.id, self.name, self.breed)
         self.id = DB[:conn].execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
