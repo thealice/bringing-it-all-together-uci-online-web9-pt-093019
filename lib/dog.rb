@@ -38,6 +38,7 @@ class Dog
       :name => name,
       :breed => breed
     }
+    dog = self.new(attributes)
   end
 
   def save
