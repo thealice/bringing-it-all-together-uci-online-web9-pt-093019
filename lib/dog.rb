@@ -36,7 +36,7 @@ class Dog
     attributes {
       id: id,
       name: name,
-      breed: => breed
+      breed: breed
     }
     dog = self.new(attributes)
   end
