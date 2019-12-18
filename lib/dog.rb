@@ -46,6 +46,10 @@ class Dog
     self.new_from_db(data)
   end
 
+  def self.find_or_create_by
+
+  end
+
   def save
     if self.id
       self.update
