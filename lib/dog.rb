@@ -23,6 +23,10 @@ class Dog
     DB[:conn].execute(sql)
   end
 
+  def self.create(attributes)
+    dog = self.new(attributes)
+  end
+
   def save
     if self.id
       self.update
